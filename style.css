@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ece8e1;
+  height: 120vh;
+}
+
+.menu {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 1200;
+  color: #f59e0b;
+}
+
+.underline {
+  background: #f59e0b;
+  width: 12rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 10px;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  background-color: #f59e0b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.buttons button:hover {
+  background-color: #d97706;
+  color: black;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.products .food {
+  width: 350px;
+}
+
+.products img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.item-info {
+  padding: 20px;
+}
+
+.info {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info h5 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f59e0b;
+  border-radius: 5px;
+  color: white;
+  padding: 2px 5px;
+}
+
+.item-info p {
+  font-weight: 300;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .menu h1 {
+    font-size: 3rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products .food {
+    width: 300px;
+  }
+
+  .products img {
+    height: 250px;
+  }
+
+  .item-info {
+    padding: 15px;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info h4,
+  .info h5 {
+    font-size: 1.2rem;
+  }
+
+  .info h5 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu h1 {
+    font-size: 2.5rem;
+  }
+
+  .buttons button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .products .food {
+    width: 250px;
+  }
+
+  .products img {
+    height: 200px;
+  }
+
+  .item-info p {
+    font-size: 0.9rem;
+  }
+
+  .info h4 {
+    font-size: 1.2rem;
+  }
+
+  .info h5 {
+    font-size: 1rem;
+  }
+}
